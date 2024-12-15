@@ -1,0 +1,93 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+  color: #333;
+  margin: 0;
+}
+
+/* App Container */
+#app {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input and Button */
+input, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  width: calc(100% - 40px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #4682b4;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a9bd4;
+  transform: scale(1.1);
+}
+
+.animated-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Display */
+.weather-display {
+  margin-top: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+}
+
+.weather-display h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
